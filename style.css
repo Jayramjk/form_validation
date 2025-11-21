@@ -1,0 +1,62 @@
+/* style.css */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    display: none;
+}
+.error-field { border-bottom: 1px solid red !important; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.center { text-align: center; }
+h2 { font-weight: 600; margin-top: 10px; margin-bottom: 25px; }
+label { font-size: 14px; font-weight: 600; margin-top: 15px; display: block; }
+.required { color: red; }
+
+input[type="text"], input[type="email"], input[type="date"],
+input[type="number"], select, textarea {
+    width: 100%; padding: 10px; margin-top: 5px; border: none;
+    border-bottom: 1px solid #999; outline: none; background: transparent;
+}
+
+.radio-group { margin-top: 5px; }
+.row { display: flex; gap: 15px; }
+.row div { flex: 1; }
+
+input[type="checkbox"] { margin-right: 10px; }
+
+.submit-btn {
+    width: 160px; margin: auto; display: block; padding: 12px; background: #2c2c84;
+    color: white; border: none; border-radius: 22px; margin-top: 25px; cursor: pointer; font-size: 15px;
+}
+
+@media(max-width: 600px) {
+    .row { flex-direction: column; }
+}
+
+.success-box {
+    padding: 20px; border: 2px solid green; background: #e8ffe8; margin-top: 20px; border-radius: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
